@@ -1,0 +1,23 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shochmut/odin-restaurant-page.git"
+  },
+  "author": "skyler hochmuth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shochmut/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/shochmut/odin-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
