@@ -1,1 +1,3 @@
-alert('test');
+import renderWebsite from "./website";
+
+renderWebsite();
