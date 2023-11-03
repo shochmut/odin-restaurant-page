@@ -1,5 +1,6 @@
 import loadNavbar from './navbar.js'
 import loadHome from './home.js'
+import loadMenu from './menu.js'
 
 
 function loadHeader() {
@@ -24,7 +25,8 @@ function loadHeader() {
 function renderWebsite() {
     const content = document.getElementById("content");
     content.appendChild(loadHeader());
-    content.appendChild(loadHome());
+    content.appendChild(loadMenu());
+    //content.appendChild(loadHome());
 }
 
 export default renderWebsite;

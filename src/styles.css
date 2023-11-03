@@ -1,3 +1,14 @@
+:root {
+    height: 100%;
+}
+
+body {
+    background-image: url('./3395.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .page-title {
     color: #85C7DE;
     text-align: center;
@@ -5,11 +16,12 @@
 }
 
 .header {
-    border: solid black;
+    border: solid #C6DBF0;
     display: grid;
     grid-template-rows: 1fr  1fr;
     height: 200px;
     margin-bottom: 30px;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .content {
@@ -26,12 +38,33 @@
 
 .nav-button {
     font-size: 30px;
+    color: #85C7DE;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
 }
 
 .nav-button:hover {
     transform: translateY(-10px);
+    transition-duration: 2s;
 }
 
 .home {
-    border: solid black;
+    border: solid #C6DBF0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    justify-items: center;
+    margin: 0 25% 0 25%;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.home-title {
+    color: #A0C4E2;
+}
+
+.home-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
 }
