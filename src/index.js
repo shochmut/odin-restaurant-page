@@ -1,3 +1,3 @@
-import renderWebsite from "./website";
+import renderWebsite from "./website.js";
 
 renderWebsite();
