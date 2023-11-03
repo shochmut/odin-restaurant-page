@@ -8,6 +8,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   watch: true,
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
