@@ -1,4 +1,5 @@
-
+import loadNavbar from './navbar.js'
+import loadHome from './home.js'
 
 
 function loadHeader() {
@@ -9,13 +10,21 @@ function loadHeader() {
     pageTitle.classList.add('page-title');
     pageTitle.textContent = "Big Daddy Sky's Sandwiches";
 
+    const navbar = loadNavbar();
+
     header.appendChild(pageTitle);
+    header.appendChild(navbar);
     
     return header;
 }
 
 
+
+
 function renderWebsite() {
     const content = document.getElementById("content");
     content.appendChild(loadHeader());
+    content.appendChild(loadHome());
 }
+
+export default renderWebsite;
