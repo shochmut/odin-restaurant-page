@@ -26,7 +26,7 @@ function renderWebsite() {
     const content = document.getElementById("content");
     content.appendChild(loadHeader());
     content.appendChild(loadMenu());
-    //content.appendChild(loadHome());
+    content.appendChild(loadHome());
 }
 
 export default renderWebsite;
