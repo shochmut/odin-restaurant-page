@@ -68,3 +68,20 @@ body {
     height: 300px;
     border-radius: 30%;
 }
+
+.menu {
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: solid #85C7DE;
+}
+
+.menu-label {
+    color: #cff0a1;
+    border-top: solid #85C7DE;
+    padding: 10px;
+}
+
+.menu-description {
+    color: #cff0a1;
+    text-align: right;
+    padding-right: 10px;
+}

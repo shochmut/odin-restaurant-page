@@ -39,9 +39,10 @@ function loadMenu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
-    menu.appendChild(menuRef.map((item) => {
-        generateMenuItem(item.name, item.description)
-    }))
+    menuRef.map((item) => {
+        menu.appendChild(generateMenuItem(item.name, item.description));
+        
+    })
 
 
 
