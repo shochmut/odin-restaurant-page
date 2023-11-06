@@ -1,9 +1,9 @@
 import Logo from './logo.jpg';
 
 
-function loadHome() {
+function initHome() {
     const home = document.createElement('div');
-    home.classList.add('home');
+    home.classList.add('home', 'page');
 
     const homeTitle = document.createElement('h2');
     homeTitle.classList.add('home-title');
@@ -20,7 +20,14 @@ function loadHome() {
 
     home.appendChild(homeTitle);
     home.appendChild(logoAnchor);
+
     return home
+}
+
+function loadHome() {
+    const main = document.getElementById('main');
+    main.textContent = '';
+    main.appendChild(initHome());
 }
 
 export default loadHome;

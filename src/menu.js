@@ -35,18 +35,22 @@ const generateMenuItem = (name, description) => {
 }
 
 
-function loadMenu() {
+function initMenu() {
     const menu = document.createElement('div');
-    menu.classList.add('menu');
+    menu.classList.add('menu', 'page');
 
     menuRef.map((item) => {
         menu.appendChild(generateMenuItem(item.name, item.description));
         
     })
 
-
-
     return menu
+}
+
+function loadMenu() {
+    const main = document.getElementById('main');
+    main.textContent = '';
+    main.appendChild(initMenu());
 }
 
 
